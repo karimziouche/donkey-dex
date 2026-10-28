@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand bg-danger navbar-dark sticky-top">
+  <div class="container">
+    <!-- Logo / nom de l'application -->
+    <a class="navbar-brand fw-bold" routerLink="/">Donkey Dex</a>
+
+    <!-- Liens de navigation -->
+    <div class="navbar-nav me-auto">
+      <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Pokédex</a>
+    </div>
+
+    <!-- Barre de recherche -->
+    <input class="form-control search" type="search" placeholder="Rechercher un Pokémon">
+  </div>
+</nav>

@@ -1,0 +1,14 @@
+<div class="container py-4">
+  <h1 class="text-center mb-4">Pokédex</h1>
+
+  @for (pokemon of pokemons(); track pokemon.id) {
+    <app-pokemon-card [pokemon]="pokemon"></app-pokemon-card>
+  }
+
+  @if (loading()) {
+    <div class="text-center my-4">
+      <div class="spinner-border text-danger" role="status"></div>
+      <p class="mt-2">Chargement des Pokémon...</p>
+    </div>
+  }
+</div>
