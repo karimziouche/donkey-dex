@@ -1,59 +1,40 @@
-# DonkeyDex
+# Donkey Dex
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.3.
+Pokédex de la première génération développé en **Angular**, réalisé dans le cadre de ma formation Développeur web et web mobile à la Donkey School.
 
-## Development server
+🔗 **Démo en ligne : [karimziouche.github.io/donkey-dex](https://karimziouche.github.io/donkey-dex/)**
 
-To start a local development server, run:
+## Fonctionnalités
 
-```bash
-ng serve
-```
+- Affichage des Pokémon de la 1re génération sous forme de cartes : numéro, nom, types et image
+- Données récupérées en temps réel depuis la [PokéAPI](https://pokeapi.co/)
+- Chargement par lots de 20 Pokémon, avec indicateur de chargement
+- Barre de navigation responsive
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## En cours de développement
 
-## Code scaffolding
+- [ ] Recherche d'un Pokémon par nom
+- [ ] Page détail de chaque Pokémon
+- [ ] Ajout aux favoris
+- [ ] Chargement automatique au défilement
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Technologies
 
-```bash
-ng generate component component-name
-```
+- **Angular 22** : composants standalone, signals, nouveau control flow (`@for`, `@if`)
+- **TypeScript**
+- **RxJS** : `forkJoin` et `switchMap` pour combiner les appels à l'API
+- **Bootstrap 5**
+- Déploiement sur **GitHub Pages**
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Lancer le projet en local
 
-```bash
-ng generate --help
-```
+    git clone https://github.com/karimziouche/donkey-dex.git
+    cd donkey-dex
+    npm install
+    npm start
 
-## Building
+Puis ouvrir http://localhost:4200
 
-To build the project run:
+## Auteur
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Karim Ziouche** – [GitHub](https://github.com/karimziouche)
